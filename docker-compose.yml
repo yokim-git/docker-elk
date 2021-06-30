@@ -2,8 +2,8 @@ version: '2'
 
 services:
   elasticsearch:
+    container_name: elasticsearch
     build:
-      container_name: elasticsearch
       context: elasticsearch/
       args:
         ELK_VERSION: $ELK_VERSION
